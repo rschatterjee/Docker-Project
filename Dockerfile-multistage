@@ -3,7 +3,7 @@ WORKDIR /usr/app
 COPY . /usr/app
 RUN cd /usr/app && mvn clean install -Dskiptests 
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11-jdk-alpine
 # Environment Variable that defines the endpoint of sentiment-analysis python api.
 ENV SA_LOGIC_API_URL http://localhost:5000
 COPY --from=build /usr/app/targetspring-petclinic-2.7.0-SNAPSHOT.jar /
