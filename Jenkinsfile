@@ -17,6 +17,12 @@ pipeline{
                 sh "docker push rschatterjee/spring-petclinic:v1"
             }
         }
+        }
+        stage("Rund"){
+            steps{
+                sh "docker run -d -p 1234:8080 spring-petclinic:v1"
+            }
+        }
         
     }
 }
