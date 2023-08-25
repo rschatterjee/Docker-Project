@@ -24,6 +24,7 @@ pipeline{
             }
         }
         stage("Dowload Artifacts"){
+            steps{
        post {
         always {
             archiveArtifacts artifacts: '**/target/*.jar', 
@@ -31,5 +32,6 @@ pipeline{
             }
         }
     }
+}
 }
 }
