@@ -20,7 +20,7 @@ pipeline{
         
         stage("Run"){
             steps{
-                sh CONTAINER_ID=`docker ps -l | grep "spring" | awk '{print $1}'`
+                sh CONTAINER_ID="docker ps -l | grep "spring" | awk '{print $1}'"
                 sh docker stop $CONTAINER_ID
                 sh "docker run -d -p 1234:8080 spring-petclinic:v1"
             }
