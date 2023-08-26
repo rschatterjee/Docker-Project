@@ -204,7 +204,7 @@
   <distributionManagement>
 		<repository>
 			<id>jenkins-release</id>
-			<name>jenkins-release/name>
+			<name>jenkins-release</name>
 			<url>http://100.25.167.201:8081/repository/jenkins-release/</url>
 		</repository>
 		<snapshotRepository>
