@@ -203,14 +203,14 @@
 
   <distributionManagement>
 		<repository>
-			<id>docker-project-release</id>
-			<name>docker-project-release</name>
-			<url>http://54.90.227.20:8081/repository/docker-project-release/</url>
+			<id>jenkins-project</id>
+			<name>jenkins-project</name>
+			<url>http://100.25.167.201:8081/repository/jenkins-project/</url>
 		</repository>
 		<snapshotRepository>
-			<id>docker-project-snapshot</id>
-			<name>docker-project-snapshot</name>
-			<url>http://54.90.227.20:8081/repository/docker-project-snapshot//</url>
+			<id>jenkins-project-snapshot</id>
+			<name>jenkins-project-snapshot</name>
+			<url>http://100.25.167.201:8081/repository/jenkins-project-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
