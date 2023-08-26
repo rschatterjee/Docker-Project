@@ -203,14 +203,14 @@
 
   <distributionManagement>
 		<repository>
-			<id>jenkins-project</id>
-			<name>jenkins-project</name>
-			<url>http://100.25.167.201:8081/repository/jenkins-project/</url>
+			<id>jenkins-release</id>
+			<name>jenkins-release/name>
+			<url>http://100.25.167.201:8081/repository/jenkins-release/</url>
 		</repository>
 		<snapshotRepository>
-			<id>jenkins-project-snapshot</id>
-			<name>jenkins-project-snapshot</name>
-			<url>http://100.25.167.201:8081/repository/jenkins-project-snapshot/</url>
+			<id>jenkins-snapshot</id>
+			<name>jenkins-snapshot</name>
+			<url>http://100.25.167.201:8081/repository/jenkins-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
