@@ -14,6 +14,8 @@ pipeline{
         }
         stage("Docker registry"){
             steps{
+                sh CONTAINER_ID = docker ps -l | grep {"spring"} | awk '{print $1}'
+                sh "docker stop $CONTAINER_ID"
                 sh "docker push rschatterjee/spring-petclinic:v1"
             }
         }
