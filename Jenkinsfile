@@ -23,15 +23,5 @@ pipeline{
                 sh "docker run -d -p 1234:8080 spring-petclinic:v1"
             }
         }
-        stage("Dowload Artifacts"){
-            steps{
-       post {
-        always {
-            archiveArtifacts artifacts: '**/target/*.jar', 
-        onlyIfSuccessful: true
-            }
-        }
-    }
-}
 }
 }
